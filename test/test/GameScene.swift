@@ -21,21 +21,18 @@ class GameScene: SKScene {
     var plank4 = Plank(block: SKSpriteNode(), value: 3)
     var plank5 = Plank(block: SKSpriteNode(), value: 4)
     var base = SKSpriteNode()
-    //var blocksIn1: [Plank] = []
-    //var blocksIn2: [Plank] = []
-    //var blocksIn3: [Plank] = []
     var stackLeft: [Plank] = []
     var stackMiddle: [Plank] = []
     var stackRight: [Plank] = []
-    //var currentStack = 0
-    var snapLocX = CGFloat(0.0)
-    var snapLocY = CGFloat(0.0)
     var topBlock = Plank(block: SKSpriteNode(), value: 4)
     var numMoves = SKLabelNode()
     var intMoves = 0
     var canMove = false //only true if the users move is valid
+    //TODO: Add auto layout so the app fits all screen sizes
     var FIRST_LINE = CGFloat(-160)
     var SECOND_LINE = CGFloat(160)
+    var snapLocX = CGFloat(0.0)
+    var snapLocY = CGFloat(0.0)
 
     override func didMove(to view: SKView) {
         plank1.block = self.childNode(withName: "block5") as! SKSpriteNode //top block
