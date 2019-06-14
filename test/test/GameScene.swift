@@ -8,6 +8,8 @@
 
 import SpriteKit
 import GameplayKit
+import AVFoundation
+import AudioToolbox
 
 class GameScene: SKScene {
 
@@ -69,26 +71,35 @@ class GameScene: SKScene {
                         findStackAddTop(topLayer: topBlock)
                         topBlock.block.run(SKAction.moveTo(y: snapLocY, duration: 0.2))
                         intMoves += 1
+                        if !endGame() {
+                            AudioServicesPlaySystemSound(1103)
+                        } else {
+                            AudioServicesPlaySystemSound(1325)
+                        }
                     }
                     topBlock.block.color = .lightGray
                     canMove = false
                 } else {
-                    topBlock = findTopofStack(tap: snapLocX)                }
+                    topBlock = findTopofStack(tap: snapLocX)
+                }
             }
         }
     }
     
     func findTopofStack(tap: CGFloat) -> Plank {
         if tap < FIRST_LINE && !stackLeft.isEmpty {
+            AudioServicesPlaySystemSound(1104)
             canMove = true
             stackLeft.last!.block.color = .yellow
             return stackLeft.last!
         } else if tap >= FIRST_LINE && tap < SECOND_LINE && !stackMiddle.isEmpty {
             canMove = true
+            AudioServicesPlaySystemSound(1104)
             stackMiddle.last!.block.color = .yellow
             return stackMiddle.last!
         } else if tap >= SECOND_LINE && !stackRight.isEmpty {
             canMove = true
+            AudioServicesPlaySystemSound(1104)
             stackRight.last!.block.color = .yellow
             return stackRight.last!
         } else {
