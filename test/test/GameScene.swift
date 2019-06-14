@@ -21,21 +21,19 @@ class GameScene: SKScene {
     var plank4 = Plank(block: SKSpriteNode(), value: 3)
     var plank5 = Plank(block: SKSpriteNode(), value: 4)
     var base = SKSpriteNode()
-    //var blocksIn1: [Plank] = []
-    //var blocksIn2: [Plank] = []
-    //var blocksIn3: [Plank] = []
     var stackLeft: [Plank] = []
     var stackMiddle: [Plank] = []
     var stackRight: [Plank] = []
-    //var currentStack = 0
-    var snapLocX = CGFloat(0.0)
-    var snapLocY = CGFloat(0.0)
     var topBlock = Plank(block: SKSpriteNode(), value: 4)
     var numMoves = SKLabelNode()
     var intMoves = 0
     var canMove = false //only true if the users move is valid
-    var FIRST_LINE = CGFloat(-160)
-    var SECOND_LINE = CGFloat(160)
+    //TODO: Add auto layout so the app fits all screen sizes
+    var FIRST_LINE = CGFloat(0.0)
+    var SECOND_LINE = CGFloat(0.0)
+    var snapLocX = CGFloat(0.0)
+    var snapLocY = CGFloat(0.0)
+    var autoPosLeft = CGFloat(0.0)
 
     override func didMove(to view: SKView) {
         plank1.block = self.childNode(withName: "block5") as! SKSpriteNode //top block
@@ -50,6 +48,12 @@ class GameScene: SKScene {
         stackLeft.append(plank3)
         stackLeft.append(plank2)
         stackLeft.append(plank1) //initialize the stack at start of game
+        for block in stackLeft {
+            block.block.position.x = (frame.width / 3) * (-1)
+        }
+        autoPosLeft = plank5.block.position.x
+        FIRST_LINE = frame.width/6 * -1
+        SECOND_LINE = -FIRST_LINE
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -117,7 +121,7 @@ class GameScene: SKScene {
     }
     
     func findStackAddTop(topLayer: Plank) {
-        if snapLocX == -247.5 {
+        if snapLocX == autoPosLeft {
             stackLeft.append(topLayer)
         } else if snapLocX == 0 {
             stackMiddle.append(topLayer)
@@ -127,7 +131,7 @@ class GameScene: SKScene {
     }
     
     func findStack() -> Array<Plank> {
-        if snapLocX == -247.5 {
+        if snapLocX == autoPosLeft {
             return stackLeft
         } else if snapLocX == 0 {
             return stackMiddle
@@ -168,12 +172,12 @@ class GameScene: SKScene {
     }
 
     func findSnapLocX(tap: CGFloat) {
-        if tap <= -160 {
-            snapLocX = -247.5
-        } else if tap > -160 && tap <= 160 {
+        if tap <= FIRST_LINE {
+            snapLocX = autoPosLeft
+        } else if tap > FIRST_LINE && tap <= SECOND_LINE {
             snapLocX = 0
         } else {
-            snapLocX = 247.5
+            snapLocX = -autoPosLeft
         }
     }
     
