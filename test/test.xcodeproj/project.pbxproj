@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691514B422E3775C001B4D76 /* CreateCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691514A622E3775A001B4D76 /* CreateCustom.swift */; };
+		691514B522E3775C001B4D76 /* SelectJargon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691514A722E3775A001B4D76 /* SelectJargon.swift */; };
+		691514B622E3775C001B4D76 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691514A822E3775A001B4D76 /* WordView.swift */; };
+		691514B722E3775C001B4D76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691514A922E3775B001B4D76 /* ViewController.swift */; };
+		691514B822E3775C001B4D76 /* allTextFiles.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691514AA22E3775B001B4D76 /* allTextFiles.txt */; };
+		691514B922E3775C001B4D76 /* Hockey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691514AB22E3775B001B4D76 /* Hockey.txt */; };
+		691514BA22E3775C001B4D76 /* SelectCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691514AC22E3775B001B4D76 /* SelectCustom.swift */; };
+		691514BB22E3775C001B4D76 /* _custom2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691514AD22E3775B001B4D76 /* _custom2.txt */; };
+		691514BC22E3775C001B4D76 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691514AE22E3775B001B4D76 /* WebView.swift */; };
+		691514BD22E3775C001B4D76 /* Engineering.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691514AF22E3775B001B4D76 /* Engineering.txt */; };
+		691514BE22E3775C001B4D76 /* TopicSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691514B022E3775B001B4D76 /* TopicSelect.swift */; };
+		691514BF22E3775C001B4D76 /* Volleyball.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691514B122E3775B001B4D76 /* Volleyball.txt */; };
+		691514C022E3775C001B4D76 /* error.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691514B222E3775B001B4D76 /* error.txt */; };
+		691514C122E3775C001B4D76 /* Basketball.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691514B322E3775B001B4D76 /* Basketball.txt */; };
 		A6C5DF7A22AED2D300D923D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C5DF7922AED2D300D923D0 /* AppDelegate.swift */; };
 		A6C5DF7C22AED2D300D923D0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A6C5DF7B22AED2D300D923D0 /* GameScene.sks */; };
 		A6C5DF7E22AED2D300D923D0 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A6C5DF7D22AED2D300D923D0 /* Actions.sks */; };
@@ -37,6 +51,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		691514A622E3775A001B4D76 /* CreateCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustom.swift; sourceTree = "<group>"; };
+		691514A722E3775A001B4D76 /* SelectJargon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectJargon.swift; sourceTree = "<group>"; };
+		691514A822E3775A001B4D76 /* WordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
+		691514A922E3775B001B4D76 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		691514AA22E3775B001B4D76 /* allTextFiles.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = allTextFiles.txt; sourceTree = "<group>"; };
+		691514AB22E3775B001B4D76 /* Hockey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hockey.txt; sourceTree = "<group>"; };
+		691514AC22E3775B001B4D76 /* SelectCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCustom.swift; sourceTree = "<group>"; };
+		691514AD22E3775B001B4D76 /* _custom2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _custom2.txt; sourceTree = "<group>"; };
+		691514AE22E3775B001B4D76 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		691514AF22E3775B001B4D76 /* Engineering.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Engineering.txt; sourceTree = "<group>"; };
+		691514B022E3775B001B4D76 /* TopicSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicSelect.swift; sourceTree = "<group>"; };
+		691514B122E3775B001B4D76 /* Volleyball.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Volleyball.txt; sourceTree = "<group>"; };
+		691514B222E3775B001B4D76 /* error.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = error.txt; sourceTree = "<group>"; };
+		691514B322E3775B001B4D76 /* Basketball.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Basketball.txt; sourceTree = "<group>"; };
 		A6C5DF7622AED2D300D923D0 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C5DF7922AED2D300D923D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6C5DF7B22AED2D300D923D0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -112,6 +140,20 @@
 				A6C5DF8622AED2D400D923D0 /* Assets.xcassets */,
 				A6C5DF8822AED2D400D923D0 /* LaunchScreen.storyboard */,
 				A6C5DF8B22AED2D400D923D0 /* Info.plist */,
+				691514AD22E3775B001B4D76 /* _custom2.txt */,
+				691514AA22E3775B001B4D76 /* allTextFiles.txt */,
+				691514B322E3775B001B4D76 /* Basketball.txt */,
+				691514A622E3775A001B4D76 /* CreateCustom.swift */,
+				691514AF22E3775B001B4D76 /* Engineering.txt */,
+				691514B222E3775B001B4D76 /* error.txt */,
+				691514AB22E3775B001B4D76 /* Hockey.txt */,
+				691514AC22E3775B001B4D76 /* SelectCustom.swift */,
+				691514A722E3775A001B4D76 /* SelectJargon.swift */,
+				691514B022E3775B001B4D76 /* TopicSelect.swift */,
+				691514A922E3775B001B4D76 /* ViewController.swift */,
+				691514B122E3775B001B4D76 /* Volleyball.txt */,
+				691514AE22E3775B001B4D76 /* WebView.swift */,
+				691514A822E3775A001B4D76 /* WordView.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -238,11 +280,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691514BD22E3775C001B4D76 /* Engineering.txt in Resources */,
+				691514C122E3775C001B4D76 /* Basketball.txt in Resources */,
 				A6C5DF8522AED2D300D923D0 /* Main.storyboard in Resources */,
 				A6C5DF7C22AED2D300D923D0 /* GameScene.sks in Resources */,
+				691514B922E3775C001B4D76 /* Hockey.txt in Resources */,
 				A6C5DF8722AED2D400D923D0 /* Assets.xcassets in Resources */,
 				A6C5DF8A22AED2D400D923D0 /* LaunchScreen.storyboard in Resources */,
 				A6C5DF7E22AED2D300D923D0 /* Actions.sks in Resources */,
+				691514BB22E3775C001B4D76 /* _custom2.txt in Resources */,
+				691514BF22E3775C001B4D76 /* Volleyball.txt in Resources */,
+				691514B822E3775C001B4D76 /* allTextFiles.txt in Resources */,
+				691514C022E3775C001B4D76 /* error.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691514BA22E3775C001B4D76 /* SelectCustom.swift in Sources */,
+				691514B422E3775C001B4D76 /* CreateCustom.swift in Sources */,
 				A6C5DF8022AED2D300D923D0 /* GameScene.swift in Sources */,
+				691514BE22E3775C001B4D76 /* TopicSelect.swift in Sources */,
+				691514B622E3775C001B4D76 /* WordView.swift in Sources */,
 				A6C5DF8222AED2D300D923D0 /* GameViewController.swift in Sources */,
+				691514B722E3775C001B4D76 /* ViewController.swift in Sources */,
+				691514BC22E3775C001B4D76 /* WebView.swift in Sources */,
+				691514B522E3775C001B4D76 /* SelectJargon.swift in Sources */,
 				A6C5DF7A22AED2D300D923D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
