@@ -89,9 +89,9 @@ class WordView: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.wordDesc.delegate = self
-        jargon = jargon.lowercased()
+        let labeltext = jargon.lowercased()
         if jargon != "" {
-            word.text = jargon
+            word.text = labeltext
         } else {
             jargon = "noinput"
             word.text = "no input"
@@ -162,17 +162,20 @@ class WordView: UIViewController, UITextViewDelegate {
     }
     
     func fileExists(name: String) -> Bool {
-        fileName = "allTextFiles"
-        for line in findLines() {
-            if line == name {
-                return true
+        if isCustom == false {
+            fileName = "allTextFiles"
+            for line in findLines() {
+                if line == name {
+                    return true
+                }
             }
-        }
+        } else {
         
-        fileName = "customLists"
-        for line in findLines() {
-            if line == name {
-                return true
+            fileName = "customLists"
+            for line in findLines() {
+                if line == name {
+                    return true
+                }
             }
         }
         return false
