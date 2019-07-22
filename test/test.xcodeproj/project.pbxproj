@@ -14,7 +14,6 @@
 		691514B822E3775C001B4D76 /* allTextFiles.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691514AA22E3775B001B4D76 /* allTextFiles.txt */; };
 		691514B922E3775C001B4D76 /* Hockey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691514AB22E3775B001B4D76 /* Hockey.txt */; };
 		691514BA22E3775C001B4D76 /* SelectCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691514AC22E3775B001B4D76 /* SelectCustom.swift */; };
-		691514BB22E3775C001B4D76 /* _custom2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691514AD22E3775B001B4D76 /* _custom2.txt */; };
 		691514BC22E3775C001B4D76 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691514AE22E3775B001B4D76 /* WebView.swift */; };
 		691514BD22E3775C001B4D76 /* Engineering.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691514AF22E3775B001B4D76 /* Engineering.txt */; };
 		691514BE22E3775C001B4D76 /* TopicSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691514B022E3775B001B4D76 /* TopicSelect.swift */; };
@@ -59,7 +58,6 @@
 		691514AA22E3775B001B4D76 /* allTextFiles.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = allTextFiles.txt; sourceTree = "<group>"; };
 		691514AB22E3775B001B4D76 /* Hockey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hockey.txt; sourceTree = "<group>"; };
 		691514AC22E3775B001B4D76 /* SelectCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCustom.swift; sourceTree = "<group>"; };
-		691514AD22E3775B001B4D76 /* _custom2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _custom2.txt; sourceTree = "<group>"; };
 		691514AE22E3775B001B4D76 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		691514AF22E3775B001B4D76 /* Engineering.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Engineering.txt; sourceTree = "<group>"; };
 		691514B022E3775B001B4D76 /* TopicSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicSelect.swift; sourceTree = "<group>"; };
@@ -119,6 +117,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A634F2B522E65D4000F4FA73 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				A634F2BA22E65EED00F4FA73 /* web */,
+				A634F2B922E65EDB00F4FA73 /* stack */,
+				A634F2B822E65EBC00F4FA73 /* jargon */,
+				A634F2B722E65EAA00F4FA73 /* home */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		A634F2B622E65DB800F4FA73 /* txt Files */ = {
+			isa = PBXGroup;
+			children = (
+				691514AA22E3775B001B4D76 /* allTextFiles.txt */,
+				691514B322E3775B001B4D76 /* Basketball.txt */,
+				691514AF22E3775B001B4D76 /* Engineering.txt */,
+				691514B222E3775B001B4D76 /* error.txt */,
+				691514AB22E3775B001B4D76 /* Hockey.txt */,
+				691514B122E3775B001B4D76 /* Volleyball.txt */,
+			);
+			path = "txt Files";
+			sourceTree = "<group>";
+		};
+		A634F2B722E65EAA00F4FA73 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				691514A922E3775B001B4D76 /* ViewController.swift */,
+				A6C5DF8322AED2D300D923D0 /* Main.storyboard */,
+				A6C5DF7922AED2D300D923D0 /* AppDelegate.swift */,
+				A6C5DF8622AED2D400D923D0 /* Assets.xcassets */,
+				A6C5DF8822AED2D400D923D0 /* LaunchScreen.storyboard */,
+				A6C5DF8B22AED2D400D923D0 /* Info.plist */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		A634F2B822E65EBC00F4FA73 /* jargon */ = {
+			isa = PBXGroup;
+			children = (
+				691514AC22E3775B001B4D76 /* SelectCustom.swift */,
+				691514A722E3775A001B4D76 /* SelectJargon.swift */,
+				691514B022E3775B001B4D76 /* TopicSelect.swift */,
+				691514A822E3775A001B4D76 /* WordView.swift */,
+				691514A622E3775A001B4D76 /* CreateCustom.swift */,
+			);
+			path = jargon;
+			sourceTree = "<group>";
+		};
+		A634F2B922E65EDB00F4FA73 /* stack */ = {
+			isa = PBXGroup;
+			children = (
+				A6C5DF7F22AED2D300D923D0 /* GameScene.swift */,
+				A6C5DF8122AED2D300D923D0 /* GameViewController.swift */,
+				A6C5DF7D22AED2D300D923D0 /* Actions.sks */,
+				A6C5DF7B22AED2D300D923D0 /* GameScene.sks */,
+			);
+			path = stack;
+			sourceTree = "<group>";
+		};
+		A634F2BA22E65EED00F4FA73 /* web */ = {
+			isa = PBXGroup;
+			children = (
+				691514AE22E3775B001B4D76 /* WebView.swift */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
 		A6C5DF6D22AED2D300D923D0 = {
 			isa = PBXGroup;
 			children = (
@@ -143,29 +209,8 @@
 		A6C5DF7822AED2D300D923D0 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				A6C5DF7922AED2D300D923D0 /* AppDelegate.swift */,
-				A6C5DF7B22AED2D300D923D0 /* GameScene.sks */,
-				A6C5DF7D22AED2D300D923D0 /* Actions.sks */,
-				A6C5DF7F22AED2D300D923D0 /* GameScene.swift */,
-				A6C5DF8122AED2D300D923D0 /* GameViewController.swift */,
-				A6C5DF8322AED2D300D923D0 /* Main.storyboard */,
-				A6C5DF8622AED2D400D923D0 /* Assets.xcassets */,
-				A6C5DF8822AED2D400D923D0 /* LaunchScreen.storyboard */,
-				A6C5DF8B22AED2D400D923D0 /* Info.plist */,
-				691514AD22E3775B001B4D76 /* _custom2.txt */,
-				691514AA22E3775B001B4D76 /* allTextFiles.txt */,
-				691514B322E3775B001B4D76 /* Basketball.txt */,
-				691514A622E3775A001B4D76 /* CreateCustom.swift */,
-				691514AF22E3775B001B4D76 /* Engineering.txt */,
-				691514B222E3775B001B4D76 /* error.txt */,
-				691514AB22E3775B001B4D76 /* Hockey.txt */,
-				691514AC22E3775B001B4D76 /* SelectCustom.swift */,
-				691514A722E3775A001B4D76 /* SelectJargon.swift */,
-				691514B022E3775B001B4D76 /* TopicSelect.swift */,
-				691514A922E3775B001B4D76 /* ViewController.swift */,
-				691514B122E3775B001B4D76 /* Volleyball.txt */,
-				691514AE22E3775B001B4D76 /* WebView.swift */,
-				691514A822E3775A001B4D76 /* WordView.swift */,
+				A634F2B622E65DB800F4FA73 /* txt Files */,
+				A634F2B522E65D4000F4FA73 /* main */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -300,7 +345,6 @@
 				A6C5DF8722AED2D400D923D0 /* Assets.xcassets in Resources */,
 				A6C5DF8A22AED2D400D923D0 /* LaunchScreen.storyboard in Resources */,
 				A6C5DF7E22AED2D300D923D0 /* Actions.sks in Resources */,
-				691514BB22E3775C001B4D76 /* _custom2.txt in Resources */,
 				691514BF22E3775C001B4D76 /* Volleyball.txt in Resources */,
 				691514B822E3775C001B4D76 /* allTextFiles.txt in Resources */,
 				691514C022E3775C001B4D76 /* error.txt in Resources */,
