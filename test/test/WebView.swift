@@ -14,7 +14,7 @@ class WebView: UIViewController, WKNavigationDelegate, WKUIDelegate {
     @IBOutlet var webView: WKWebView!
     //var content  = String()
     var tempUrl: URL?
-    let urlMy = URL(string: "https://www.google.ca")
+    let urlMy = URL(string: "https://rogerhub.com/final-grade-calculator/")
     //let htmlURL = Bundle.main.url(forResource: "webby", withExtension: "html")
     
     override func viewDidLoad() {

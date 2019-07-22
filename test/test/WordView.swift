@@ -86,12 +86,16 @@ class WordView: UIViewController, UITextViewDelegate {
         return true
     }
     
+    func capitalizingFirstLetter(word: String) -> String {
+        return word.prefix(1).capitalized
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.wordDesc.delegate = self
-        let labeltext = jargon.lowercased()
         if jargon != "" {
-            word.text = labeltext
+            word.text = jargon
         } else {
             jargon = "noinput"
             word.text = "no input"

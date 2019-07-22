@@ -11,9 +11,16 @@ import WebKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var option1: UIButton!
+    @IBOutlet weak var option2: UIButton!
+    @IBOutlet weak var option3: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        option1.setTitle("Stress", for: .normal)
+        option2.setTitle("Study", for: .normal)
+        option3.setTitle("Stack", for: .normal)
     }
 
 
