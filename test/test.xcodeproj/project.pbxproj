@@ -149,7 +149,6 @@
 				A6C5DF7922AED2D300D923D0 /* AppDelegate.swift */,
 				A6C5DF8622AED2D400D923D0 /* Assets.xcassets */,
 				A6C5DF8822AED2D400D923D0 /* LaunchScreen.storyboard */,
-				A6C5DF8B22AED2D400D923D0 /* Info.plist */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -209,6 +208,7 @@
 		A6C5DF7822AED2D300D923D0 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				A6C5DF8B22AED2D400D923D0 /* Info.plist */,
 				A634F2B622E65DB800F4FA73 /* txt Files */,
 				A634F2B522E65D4000F4FA73 /* main */,
 			);
